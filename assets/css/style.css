@@ -1,0 +1,155 @@
+@import "custom.css";
+
+a {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--primary-dark);
+}
+
+button {
+    outline: none !important;
+}
+
+.navbar {
+    border-bottom: 4px solid var(--red);
+}
+
+.banner-mobile {
+    display: block;
+}
+
+.banner-desktop {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .banner-mobile {
+        display: none;
+    }
+    
+    .banner-desktop {
+        display: block;
+    }
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    margin: 10px 0;
+}
+
+.list li i {
+    width: 40px;
+    text-align: center;
+}
+
+.credit-card-list {
+    font-size: 1.375rem;
+    color: var(--gray);
+}
+
+
+.credit-card-list i {
+    font-size: 1.75rem;
+    color: var(--red);
+}
+
+@media (min-width: 992px) {
+    .credit-card-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .credit-card-list li {
+        width: 50%;
+    }
+}
+
+.about {
+    background-image: url("../images/about.jpg");
+    background-size: cover; /* quando bota cover não precisa no-repeat */
+    background-position: center center; /* Center the image */
+    font-size: 1.125rem;
+}
+
+.about-list {
+    font-size: 1.5rem;
+}
+
+.faq {
+    background-color: #443a50;
+}
+
+.faq .nav .nav-link {
+    font-size: 1.25rem;
+    color: white;
+    opacity: .5;
+    transition: opacity, margin .3s ease;
+}
+
+.faq .nav .nav-link i {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.faq .nav .nav-link.active {
+    background-color: transparent;
+    opacity: 1;
+}
+
+@media (min-width: 576px) {
+    .faq .nav .nav-link i {
+        font-size: 2.8125rem;
+        width: 50px;
+    }
+}
+
+.faq .accordion .card {
+    background-color: transparent;
+    border-color: #3f2a4a;
+}
+
+.faq .accordion .card .card-header {
+    background-color: #3f2a4a;
+}
+
+.footer {
+    border-bottom: 4px solid var(--red);
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.footer-social li {
+    font-size: 1.5rem;
+}
+.footer-social li a {
+    color: var(--secondary);
+    padding: 10px;
+    display: block;
+}
+.footer-social li a:hover {
+    color: var(--red);
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #8c01b2, #be1523);
+    color: white;
+}
+
+.user-avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 1.625rem;
+}
